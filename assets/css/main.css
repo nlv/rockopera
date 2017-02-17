@@ -119,8 +119,9 @@ header > nav
 
 header > nav > ul
 {
-  display   : flex;
-  flex-wrap : wrap;
+  display         : flex;
+  flex-wrap       : wrap;
+  justify-content : center;
 }
 
 header > nav > ul li
@@ -161,15 +162,15 @@ html
 @media all and (min-width: 768px) and (max-width: 991px)
 {
 
+html
+{
+  font-size : 15px;
+}
+
 body
 {
   width     : 100vw;
   max-width : 100vw;
-}
-
-html
-{
-  font-size : 15px;
 }
 
 header > nav > ul > li
@@ -181,15 +182,15 @@ header > nav > ul > li
 @media all and (min-width: 481px) and (max-width: 767px)
 {
 
+html
+{
+  font-size : 12px;
+}
+
 body
 {
   width     : 100vw;
   max-width : 100vw;
-}
-
-html
-{
-  font-size : 12px;
 }
 
 header > nav > ul > li
@@ -201,15 +202,15 @@ header > nav > ul > li
 @media all and (max-width: 480px)
 {
 
+html
+{
+  font-size : 12px;
+}
+
 body
 {
   width     : 100vw;
   max-width : 100vw;
-}
-
-html
-{
-  font-size : 12px;
 }
 
 header > nav > ul > li
