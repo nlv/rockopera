@@ -85,181 +85,120 @@ html
   -o-box-sizing      : border-box;
   box-sizing         : border-box;
   font-family        : "Roboto", serif;
-  font-size          : 17px;
 }
 
 body
 {
-  width      : 90vw;
-  max-width  : 90vw;
-  margin     : auto auto auto auto;
-  text-align : center;
+  width          : 90vw;
+  max-width      : 90vw;
+  margin         : auto auto auto auto;
+  display        : flex;
+  flex-direction : column;
+  border-style   : solid;
+  border-color   : #ff0000;
+  border-width   : 1px;
 }
 
-
-header > nav li
+body > main
 {
-  float      : left;
-  width      : 11.11111%;
-  padding    : 5px 5px 5px 5px;
-  text-align : center;
+  display : none;
 }
 
-header > nav li a
+header
+{
+  border-style : solid;
+  border-color : #0000ff;
+  border-width : 1px;
+}
+
+header > nav
+{
+  display         : flex;
+  justify-content : center;
+}
+
+header > nav > ul
+{
+  display   : flex;
+  flex-wrap : wrap;
+}
+
+header > nav > ul li
+{
+  padding : 1rem 2rem 1rem 2rem;
+}
+
+header > nav > ul li a
+{
+  font-weight : bold;
+}
+
+
+nav a
 {
   text-decoration : none;
-  font-weight     : bold;
   color           : #000000;
 }
 
-.clearfix::after
+@media all and (min-width: 1200px)
 {
-  content : "";
-  display : table;
-  clear   : both;
+
+html
+{
+  font-size : 17px;
 }
 
-#main
+}
+@media all and (min-width: 992px) and (max-width: 1199px)
 {
-  display         : flex;
-  justify-content : space-around;
-  margin-top      : 10px;
+
+html
+{
+  font-size : 15px;
 }
 
-#main nav
+}
+@media all and (min-width: 768px) and (max-width: 991px)
 {
-  max-width : 25%;
-  padding   : 60px 60px 60px 60px;
+
+html
+{
+  font-size : 15px;
 }
 
-#main nav .maindiv
+header > nav > ul > li
 {
-  color               : #0000ff;
-  padding-bottom      : 5px;
-  border-bottom-color : #0000ff;
-  border-bottom-style : solid;
-  border-bottom-width : 1px;
+  padding : 1rem 1rem 1rem 1rem;
 }
 
-#main nav .subdivs > li
+}
+@media all and (min-width: 481px) and (max-width: 767px)
 {
-  padding-top : 5px;
+
+html
+{
+  font-size : 12px;
 }
 
-#main nav > ul > li
+header > nav > ul > li
 {
-  padding-top    : 10px;
-  padding-bottom : 10px;
+  padding : 1rem 1rem 1rem 1rem;
 }
 
-#main #nav-left
+}
+@media all and (max-width: 480px)
 {
-  text-align : right;
+
+html
+{
+  font-size : 12px;
 }
 
-#main #nav-right
+header > nav > ul > li
 {
-  text-align : left;
+  padding : 1rem 1rem 1rem 1rem;
 }
 
-#main #content
-{
-  max-width   : 600px;
-  text-align  : center;
-  flex-grow   : 4;
-  padding     : 60px 60px 60px 60px;
-  line-height : 1.6;
 }
-
-
-#main #content p
-{
-  margin-top : 1rem;
-  text-align : justify;
-}
-
-
-
-#main article header
-{
-  font-size   : 1.39999em;
-  text-align  : center;
-  font-weight : bold;
-  margin-top  : 1rem;
-}
-
-.carusel
-{
-  display         : flex;
-  justify-content : space-between;
-  align-items     : stretch;
-  margin-top      : 2em;
-}
-
-.carusel li
-{
-  flex-grow     : 1;
-  flex-basis    : 33.32999%;
-  padding-left  : 5px;
-  padding-right : 5px;
-}
-
-.carusel li img
-{
-  width  : 100%;
-  height : 100%;
-}
-
-
-#news article
-{
-  border        : solid 1px #000000;
-  display       : flex;
-  margin-top    : 2em;
-  margin-bottom : 2em;
-  padding       : 5px 5px 5px 5px;
-}
-
-#news article .logo
-{
-  display        : flex;
-  flex-direction : column;
-}
-
-#news article .logo div.date
-{
-  text-align : start;
-  font-size  : 0.8em;
-}
-
-#news article section.title
-{
-  text-align : justify;
-}
-
-#news article section.title h1
-{
-  font-weight : bold;
-  line-height : 1.19999em;
-}
-
-#news article section.title h2
-{
-  margin-top  : 1em;
-  font-size   : 0.8em;
-  line-height : 1.19999em;
-}
-
-#news .photo
-{
-  padding : 5px 5px 5px 5px;
-}
-
-
-#news .photo img
-{
-  width : 100%;
-}
-
 
 /* Generated with Clay, http://fvisser.nl/clay */
