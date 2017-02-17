@@ -101,7 +101,30 @@ body
 
 body > main
 {
+  display         : flex;
+  justify-content : center;
+  border-style    : solid;
+  border-color    : #008000;
+  border-width    : 1px;
+}
+
+body > main > main
+{
+  border-style : solid;
+  border-color : #000000;
+  border-width : 1px;
+}
+
+body > main > main > section
+{
   display : none;
+}
+
+body > main > nav
+{
+  border-style : solid;
+  border-color : #0000ff;
+  border-width : 1px;
 }
 
 header
@@ -141,12 +164,59 @@ nav a
   color           : #000000;
 }
 
+main > nav.parts-links
+{
+  border-style : solid;
+  border-color : #ffff00;
+  border-width : 1px;
+  flex-basis   : 25%;
+  flex-grow    : 1;
+  flex-shrink  : 1;
+  padding      : 1em 1em 1em 1em;
+}
+
+
+main > nav.parts-links > ul > li
+{
+  padding-top  : 1em;
+  line-height  : 1.5em;
+  border-style : solid;
+  border-color : #ffa500;
+  border-width : 1px;
+}
+
+main > nav.parts-links > ul > li > p
+{
+  color               : #0000ff;
+  font-weight         : bold;
+  border-bottom-color : #0000ff;
+  border-bottom-style : solid;
+  border-bottom-width : 1px;
+}
+
+#nav-left
+{
+  text-align : right;
+}
+
+
+#nav-left > ul li
+{
+  align-items : flex-end;
+}
+
 @media all and (min-width: 1200px)
 {
 
 html
 {
   font-size : 17px;
+}
+
+body > main > main
+{
+  min-width : 600px;
+  max-width : 600px;
 }
 
 }
@@ -158,6 +228,12 @@ html
   font-size : 15px;
 }
 
+body > main > main
+{
+  min-width : 500px;
+  max-width : 500px;
+}
+
 }
 @media all and (min-width: 768px) and (max-width: 991px)
 {
@@ -165,6 +241,12 @@ html
 html
 {
   font-size : 15px;
+}
+
+body > main > main
+{
+  min-width : 390px;
+  max-width : 390px;
 }
 
 body
@@ -187,6 +269,12 @@ html
   font-size : 12px;
 }
 
+body > main > main
+{
+  min-width : 390px;
+  max-width : 390px;
+}
+
 body
 {
   width     : 100vw;
@@ -205,6 +293,12 @@ header > nav > ul > li
 html
 {
   font-size : 12px;
+}
+
+body > main > main
+{
+  min-width : 240px;
+  max-width : 240px;
 }
 
 body
