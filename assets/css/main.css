@@ -121,6 +121,16 @@ body > main > main > section
   display : none;
 }
 
+body > main > main #intro-video
+{
+  display : block;
+}
+
+body > main > main > section
+{
+  text-align : center;
+}
+
 body > main > nav
 {
   border-style : solid;
@@ -179,8 +189,8 @@ main > nav.parts-links
 
 main > nav.parts-links > ul > li
 {
-  padding-top  : 1em;
-  line-height  : 1.5em;
+  padding-top  : 1.5em;
+  line-height  : 1.19999em;
   border-style : solid;
   border-color : #ffa500;
   border-width : 1px;
@@ -193,6 +203,18 @@ main > nav.parts-links > ul > li > p
   border-bottom-color : #0000ff;
   border-bottom-style : solid;
   border-bottom-width : 1px;
+}
+
+
+main > nav.parts-links > ul > li > ul > li
+{
+  padding-top : 0.8em;
+}
+
+
+main > nav.parts-links > ul > li > ul li:first-child
+{
+  padding-top : 0.5em;
 }
 
 #nav-left
@@ -214,6 +236,16 @@ html
   font-size : 17px;
 }
 
+.video-large
+{
+  display : inline;
+}
+
+.video-medium
+{
+  display : none;
+}
+
 }
 @media all and (min-width: 992px) and (max-width: 1199px)
 {
@@ -221,6 +253,16 @@ html
 html
 {
   font-size : 15px;
+}
+
+.video-large
+{
+  display : none;
+}
+
+.video-medium
+{
+  display : inline;
 }
 
 }
@@ -243,6 +285,16 @@ header > nav > ul > li
   padding : 1rem 1rem 1rem 1rem;
 }
 
+.video-large
+{
+  display : none;
+}
+
+.video-medium
+{
+  display : inline;
+}
+
 }
 @media all and (min-width: 481px) and (max-width: 767px)
 {
@@ -261,6 +313,16 @@ body
 header > nav > ul > li
 {
   padding : 1rem 1rem 1rem 1rem;
+}
+
+.video-large
+{
+  display : none;
+}
+
+.video-medium
+{
+  display : inline;
 }
 
 }
@@ -287,6 +349,16 @@ body
 header > nav > ul > li
 {
   padding : 1rem 1rem 1rem 1rem;
+}
+
+.video-large
+{
+  display : none;
+}
+
+.video-medium
+{
+  display : inline;
 }
 
 }
