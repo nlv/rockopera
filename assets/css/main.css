@@ -108,11 +108,6 @@ body > main > main
 }
 
 
-#intro-video
-{
-  text-align : center;
-}
-
 
 header > nav
 {
@@ -146,9 +141,7 @@ nav a
 
 main > nav.parts-links
 {
-  flex-basis    : 25%;
-  flex-grow     : 1;
-  flex-shrink   : 1;
+  max-width     : 500px;
   padding-left  : 1em;
   padding-right : 1em;
 }
@@ -207,6 +200,11 @@ main > nav.parts-links > ul li:first-child
 #main-content > section
 {
   margin-top : 4em;
+}
+
+#intro-video
+{
+  text-align : center;
 }
 
 #intro
