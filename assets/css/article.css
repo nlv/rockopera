@@ -185,6 +185,12 @@ body > header > nav a
   color : #4682b4;
 }
 
+
+.parts-links > ul.first-child > li
+{
+  padding-top : 1em;
+}
+
 #nav-right
 {
   margin-left : 2em;
@@ -281,13 +287,6 @@ html
   display : none;
 }
 
-.video-large
-{
-  border-style : solid;
-  border-color : #ff0000;
-  border-width : 5px;
-}
-
 }
 @media all and (min-width: 992px) and (max-width: 1399px)
 {
@@ -305,13 +304,6 @@ html
 .video-medium
 {
   display : inline;
-}
-
-.video-medium
-{
-  border-style : solid;
-  border-color : #008000;
-  border-width : 5px;
 }
 
 }
