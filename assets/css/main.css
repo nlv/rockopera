@@ -381,7 +381,7 @@ body > header > nav a
   margin-right : 0px;
 }
 
-@media all and (min-width: 1200px)
+@media all and (min-width: 1400px)
 {
 
 html
@@ -407,7 +407,7 @@ html
 }
 
 }
-@media all and (min-width: 992px) and (max-width: 1199px)
+@media all and (min-width: 992px) and (max-width: 1399px)
 {
 
 html
