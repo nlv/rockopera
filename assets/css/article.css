@@ -116,8 +116,10 @@ body > header
 
 body > header > nav
 {
-  display         : flex;
-  justify-content : center;
+  font-size        : 1.19999rem;
+  display          : flex;
+  justify-content  : center;
+  background-color : #d3d3d3;
 }
 
 body > header > nav > ul
@@ -146,8 +148,6 @@ body > header > nav a
 .parts-links
 {
   max-width        : 300px;
-  margin-left      : 3em;
-  margin-right     : 3em;
   padding          : 0.5em 0.5em 0.5em 0.5em;
   background-color : #dcdcdc;
   background-color : #f5f5f5;
@@ -163,32 +163,26 @@ body > header > nav a
 
 .parts-links > ul > li > p a
 {
-  text-decoration     : none;
-  color               : #0000ff;
-  font-weight         : bold;
-  border-bottom-color : #0000ff;
-  border-bottom-style : solid;
-  border-bottom-width : 1px;
+  text-decoration : none;
+  color           : #0000ff;
+  font-weight     : bold;
 }
 
 
 .parts-links > ul > li > ul > li
 {
-  padding-top : 0.8em;
+  padding-top : 0.4em;
 }
 
-
-.parts-links > ul > li > ul li:first-child
+#nav-right
 {
-  padding-top : 0.5em;
+  margin-left : 2em;
 }
 
-
-.parts-links > ul li:first-child
+#nav-left
 {
-  padding-top : 0px;
+  margin-right : 2em;
 }
-
 
 
 #nav-left > ul li
@@ -203,8 +197,6 @@ body > header > nav a
 
 #main-content
 {
-  background-color : #dcdcdc;
-  background-color : #f8f8ff;
   background-color : #f5f5f5;
   padding          : 1em 2em 1em 2em;
 }
