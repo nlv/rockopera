@@ -1,6 +1,7 @@
 
 @import url(font-awesome.min.css);
 @import url(http://fonts.googleapis.com/css?family=Roboto Slab:100,100italic,300,300italic,400,400italic);
+@import url(http://fonts.googleapis.com/css?family=Bad Script:100,100italic,300,300italic,400,400italic);
 a,
 abbr,
 acronym,
@@ -249,6 +250,13 @@ body > footer a
   margin-top : 4em;
 }
 
+blockquote.poem
+{
+  font-style  : italic;
+  margin-top  : 1em;
+  margin-left : 2em;
+}
+
 ul.keywords
 {
   display       : flex;
@@ -310,7 +318,8 @@ ul.keywords li:last-child
 
 #main-content em
 {
-  font-style : italic;
+  font-style  : italic;
+  font-family : "Bad Script", serif;
 }
 
 #main-content figure
